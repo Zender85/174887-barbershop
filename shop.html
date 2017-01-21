@@ -2,9 +2,86 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Barbershop Магазин</title>
 </head>
 <body>
-
+	<header class="main-header">
+		<div class="container">
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<nav class="main-menu">
+				<ul>
+		            <li>
+		             	<a href="#">Информация</a>
+		            </li>
+		            <li>
+		             	<a href="#">Новости</a>
+		            </li>
+		            <li>
+		             	<a href="#">Прайс-лист</a>
+		            </li>
+		            <li class="main-menu-active"> 
+		            	<a href="#">Магазин</a>
+		            </li>
+		            <li>
+		            	<a href="#">Контакты</a>
+		            </li>
+          		</ul>
+			</nav>
+			<div class="user-block">
+          		<a class="login" href="#">Вход</a>
+        	</div>			
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h1>Средства для ухода</h1>
+			<div class="breadcrumbs">
+				<span>Главная</span>
+				<span>Магазин</span>
+				<span class="breadcrumbs-active">Средства для ухода</span>
+			</div>
+			<div class="left-column">
+				<div class="catalogue-filters">
+					<form class="-filter" action="https://echo.htmlacademy.ru" method="post">
+						<h2>Производитель</h2>
+						<label>
+							<input type="checkbox" name="baxter-of-california" checked> Baxter of california
+						</label>
+						<label>
+							<input type="checkbox" name="mr-natty"> Mr Natty
+						</label>
+						<label>
+							<input type="checkbox" name="suavecito" checked> Suavecito
+						</label>
+						<label>
+							<input type="checkbox" name="malin+goetz" checked> Malin+Goetz
+						</label>
+						<label>
+							<input type="checkbox" name="murrays" checked> Murray's
+						</label>
+						<label>
+							<input type="checkbox" name="american-crew" checked> American Crew
+						</label>
+						<h2>Группа товаров</h2>
+						<label>
+							<input type="radio" name="shaving"> Бритвенные принадлежности
+						</label>
+						<label>
+							<input type="radio" name="care" checked> Средства для ухода
+						</label>
+						<label>
+							<input type="radio" name="accessories"> Аксессуары
+						</label>
+						<button class="btn" type="submit">Показать</button>
+					</form>
+				</div>
+			</div>
+			<div class="catalog">
+				
+			</div>
+		</div>
+	</main>
 </body>
 </html>
