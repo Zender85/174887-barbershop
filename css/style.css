@@ -2,7 +2,7 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	color: #000;
-	font-weight: normal;
+	font-weight: bold;
 	font-family: 'PT Sans Narrow', sans-serif;
 	text-transform: uppercase;
 	margin: 0;
@@ -63,7 +63,11 @@ main {padding-top: 54px;}
 }
 	.breadcrumbs ul li {
 		display: inline-block; 
-		margin-right: 40px;
+		margin-right: 18px;
+	}
+	.breadcrumbs ul li:not(:last-child):after {
+		content: url(../img/diamond-big.png);
+		margin-left: 18px;
 	}
 		.breadcrumbs ul li a, 
 		.breadcrumbs ul li span {
@@ -117,10 +121,9 @@ main {padding-top: 54px;}
 			line-height: 18px;
 		}
 		.catalog-item-info a span {text-transform: none;}
-		.catalog article .buy { 
-			font-weight: bold;
-			margin-left: 16px;}
-		.catalog article .buy .price {
+		.catalog article .buy { margin-left: 16px;}
+		.buy { font-weight: bold; font-size: 0px;}
+		.buy .price {
 			display: inline-block;
 			width: 110px;
 			height: 43px;
@@ -141,8 +144,9 @@ main {padding-top: 54px;}
 			background-color: #000;
 		}
 .pagination { margin-top: 25px; }
-	.pagination ul li{
-		display: inline-block; margin-right: 7px;
+	.pagination ul li {
+		display: inline-block; 
+		margin-right: 7px;
 	}
 		.pagination ul li a,
 		.pagination ul li span {
@@ -157,11 +161,35 @@ main {padding-top: 54px;}
 		.pagination ul li span {background: #fff; color: #000;}
 
 	/*catalog-item page*/
-.item-photos {float: left;}
-	.item-photos .preview-item {
-		display: inline-block;
-	}
+.item-photos {
+	float: left; 
+	font-size: 0;
+}
+	.item-photos img {box-shadow: 0 0 15px #ccc;}
+	.item-photos .preview-item { display: inline-block; }
+	.item-photos .preview-item:not(:last-child) {margin-right: 20px;}
 
+.item-info {
+	float: right;
+	width: 390px;
+}
+	.item-info .articul {
+		float: right;
+		color: #aeaeae;
+	}
+	.item-info .item-description {
+		margin-top: 33px;
+		margin-bottom: 38px;
+	}
+	.item-info h3 {
+		margin-top: 54px;
+		margin-bottom: 35px;
+		}
+	.item-info .item-parts ul{ list-style: none; }
+		.item-info .item-parts ul li:before {
+			content: url(../img/diamond-small.png);
+			margin-right: 10px;
+		}
 	/*FOOTER*/
 .main-footer {
 	height: 190px;
