@@ -35,7 +35,7 @@ h3 {
     display: table;
     clear: both;
 }
-main {padding-top: 54px;}
+main>.container{ padding-top: 54px;}
 
 	/*HEADER*/
 .main-header {
