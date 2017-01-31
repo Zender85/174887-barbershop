@@ -142,13 +142,13 @@ main>.container {
 }
 
 .filters .btn {
-	width: 112px;
+	max-width: 112px;
 	overflow: hidden;
-	font: bold 14px/14px 'PT Sans Narrow', 'Arial', sans-serif ;
+	font: bold 14px/43px 'PT Sans Narrow', 'Arial', sans-serif ;
 	text-transform: uppercase;
 	background-color: #000;
 	border: none;
-	padding: 15px 0 15px 0; 
+	padding: 0 29px 0 29px; 
 	color: #fff;
 	cursor: pointer; 
 }
@@ -285,8 +285,13 @@ input[type="radio"]:checked + label::before {
 .pagination ul li span {
 	font-size: 14px; 
 	line-height: 23px; 
+	box-sizing: border-box;
+	max-width: 43px;
+	overflow: hidden;
+	vertical-align: top;
 	display: inline-block; 
-	padding: 10px 18px; 
+	line-height: 43px;
+	padding: 0 18px; 
 	text-decoration: none; 
 	font-weight: bold;
 }
@@ -390,6 +395,7 @@ input[type="radio"]:checked + label::before {
 
 .footer-social a {
 	display: inline-block;
+	vertical-align: top;
 	width: 43px;
 	height: 43px;
 	font-size: 0;
@@ -439,8 +445,9 @@ input[type="radio"]:checked + label::before {
 	display: inline-block;
 	background-color: #000;
 	color: #fff;
+	line-height: 43px;
 	text-decoration: none;
-	padding: 10px 25px; 
+	padding: 0 25px; 
 }
 
 .footer-copyright .academy-link:hover {
