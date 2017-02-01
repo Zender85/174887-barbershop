@@ -58,11 +58,12 @@ main>.container {
 	background: #000;
 }
 
-.main-header nav,
-.main-header nav ul li,
+.main-navigation,
+.main-navigation li,
 .main-header .logo, 
 .main-header .user-block { 
-	display: inline-block;	
+	display: inline-block;
+	vertical-align: top;	
 }
 
 .main-header .logo {
@@ -74,31 +75,33 @@ main>.container {
 	float: right;
 }
 
-/*MAIN*/
+	/*MAIN*/
+
 .breadcrumbs {
 	margin-top: 25px; 
 	margin-bottom: 54px;
 }
 
-.breadcrumbs ul li {
+.breadcrumbs li {
 	display: inline-block; 
+	vertical-align: top;
 	margin-right: 18px;
 }
 
-.breadcrumbs ul li:not(:last-child):after {
+.breadcrumbs li:not(:last-child):after {
 	content: url('../img/diamond-big.png');
 	margin-left: 18px;
 }
 
-.breadcrumbs ul li a, 
-.breadcrumbs ul li span {
+.breadcrumbs a, 
+.breadcrumbs span {
 	font-size: 14px;
 	font-weight: bold;
 	color: #000;
 	text-decoration: none;
 }
 
-.breadcrumbs ul li span {
+.breadcrumbs span {
 	color: #aba9a7;
 }
 
@@ -111,8 +114,8 @@ main>.container {
 	font-size: 0;
 }
 
-.filters form input[type="checkbox"],
-.filters form input[type="radio"] { 
+.filters-form input[type="checkbox"],
+.filters-form input[type="radio"] { 
 	float: left;
 }
 
@@ -123,6 +126,10 @@ main>.container {
 	font-size: 14px;
 	margin-bottom: 16px;
 	margin-left: 10px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .filters label:last-of-type {
@@ -157,7 +164,7 @@ main>.container {
 	background-color: #663d15; 
 }
 
-/*CHECKBOX & RADIO STYLES*/
+	/*CHECKBOX & RADIO STYLES*/
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -234,7 +241,7 @@ input[type="radio"]:checked + label::before {
 	text-transform: none; 
 }
 
-.catalog article .buy { 
+.catalog .buy { 
 	margin-left: 16px; 
 	margin-bottom: 16px;
 }
@@ -276,13 +283,13 @@ input[type="radio"]:checked + label::before {
 	margin-top: 25px; 
 }
 
-.pagination ul li {
+.pagination li {
 	display: inline-block; 
 	margin-right: 7px;
 }
 
-.pagination ul li a,
-.pagination ul li span {
+.pagination a,
+.pagination span {
 	font-size: 14px; 
 	line-height: 23px; 
 	box-sizing: border-box;
@@ -296,21 +303,21 @@ input[type="radio"]:checked + label::before {
 	font-weight: bold;
 }
 
-.pagination ul li a { 
+.pagination a { 
 	background-color: #000; 
 	color: #fff; 
 }
 
-.pagination ul li span { 
+.pagination span { 
 	background-color: #fff; 
 	color: #000; 
 }
 
-.pagination ul li a:hover { 
+.pagination a:hover { 
 	background-color: #663d15; 
 }
 
-/*catalog-item page*/
+	/*CATALOG_ITEM_PAGE*/
 
 .item-photos {
 	float: left; 
@@ -349,16 +356,16 @@ input[type="radio"]:checked + label::before {
 	margin-bottom: 35px;
 }
 
-.item-info .item-parts ul{ 
+.item-parts ul { 
 	list-style: none; 
 }
 
-.item-info .item-parts ul li:before {
+.item-parts li:before {
 	content: url('../img/diamond-small.png');
 	margin-right: 10px;
 }
 
-/*FOOTER*/
+	/*FOOTER*/
 
 .main-footer {
 	background-image: url('../img/footer-mini.png');
@@ -369,15 +376,18 @@ input[type="radio"]:checked + label::before {
 }
 
 .main-footer section {
+	display: inline-block;
 	vertical-align: top; 
 }
 
-.main-footer section p {
+.main-footer span {
+	display: block;
+	font-size: 14px;
 	margin-top: 0;
+	margin-bottom: 14px;
 }
 
 .footer-contacts {
-	display: inline-block;
 	width: 320px;
 	margin-right: 90px;
 }
@@ -387,7 +397,6 @@ input[type="radio"]:checked + label::before {
 }
 
 .footer-social {
-	display: inline-block;
 	width: 140px;
 	text-align: center;
 	font-size: 0;
@@ -430,13 +439,8 @@ input[type="radio"]:checked + label::before {
 	background: #fff url('../img/ig-footer-hover.png') no-repeat 50% 50%; 
 }
 
-.footer-social p { 
-	font-size: 14px; 
-}
-
 .main-footer .footer-copyright {
 	float: right;
-	display: inline-block;
 	width: 140px;
 	text-align: center;
 }
